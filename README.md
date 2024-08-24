@@ -6,19 +6,7 @@
 Dimo
 
 
-you can check the live dimo of project [here]{}
-
-## Technologies 
-1️⃣  React: Frontend library for building the user interface.
-
-2️⃣  Axios: For making HTTP requests to fetch quotes and images.
-
-3️⃣  Tailwind CSS: For styling the components.
-
-4️⃣  API Ninjas Quotes API: For retrieving quotes.
-
-5️⃣  Pexels API: For fetching background images based on the selected category.
-
+you can check the live dimo of project [here]{https://walwalasafi.github.io/Random-Quote-Machine/}
 
 
 ### Rquirements
@@ -43,6 +31,20 @@ Open your terminal or command prompt. Navigate to the directory where you want t
 6️⃣ `use (git add, git commint, git push) in the git bash to push it in Github`
 
 7️⃣  `Make a string and uniqe project-Readme.md file`
+
+
+
+## Technologies 
+1️⃣  React: Frontend library for building the user interface.
+
+2️⃣  Axios: For making HTTP requests to fetch quotes and images.
+
+3️⃣  Tailwind CSS: For styling the components.
+
+4️⃣  API Ninjas Quotes API: For retrieving quotes.
+
+5️⃣  Pexels API: For fetching background images based on the selected category.
+
 
 
 ### Author 🔵✅

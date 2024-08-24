@@ -1,5 +1,5 @@
-import './App.css';
-import QuoteBox from './QuoteBox';
+import React from 'react';
+import QuoteBox from './QuoteBox'; // Ensure the path is correct
 
 function App() {
   return (
