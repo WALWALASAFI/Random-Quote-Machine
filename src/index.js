@@ -10,14 +10,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-const colors = [
-  '#FFEBEE',
-  '#FCE4EC',
-  '#F3E5F5', 
-  '#EDE7F6',
-  '#E1F5FE',
-  '#E0F2F1',
-  '#E8F5E9',
-  '#F9FBE7',
-  '#FFF9C4',
-];
+
