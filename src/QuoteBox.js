@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react'; // Ensure you import useState if you use it
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const colors = [
   '#dce775',
-  '#fce4ec', 
-  '#c5e1a5', 
-  '#ff6f61', 
-  '#000000', 
-  '#3f51b5', 
-  '#4caf50', 
-  '#e91e63', 
-  '#00bcd4', 
-  '#8d6e63', 
-  '#f7f1e1', 
-  '#e0f7fa', 
-  '#f0f4c3'
+  '#fce4ec',
+  '#c5e1a5',
+  '#ff6f61',
+  '#000000',
+  '#3f51b5',
+  '#4caf50',
+  '#e91e63',
+  '#00bcd4',
+  '#8d6e63',
+  '#f7f1e1',
+  '#e0f7fa',
+  '#f0f4c3',
 ];
 
 function QuoteBox() {
@@ -25,21 +25,21 @@ function QuoteBox() {
     fetchQuote();
   }, []);
 
-  const fetchQuote = async () => {
+  async function fetchQuote() { // Moved function declaration here
     try {
       const response = await axios.get('https://api.quotable.io/random');
       setQuote({
         text: response.data.content,
-        author: response.data.author
+        author: response.data.author,
       });
 
       // Pick a random background color for the body
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
       document.body.style.backgroundColor = randomColor;
     } catch (error) {
-      console.error('Error fetching quote:', error); // Consider removing or handling the error appropriately
+      console.error('Error fetching quote:', error); // Handle or remove this as needed
     }
-  };
+  }
 
   const tweetQuote = () => {
     const twitterUrl = `https://twitter.com/intent/tweet?text="${encodeURIComponent(quote.text)}" - ${encodeURIComponent(quote.author)}`;

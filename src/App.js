@@ -1,13 +1,13 @@
-// src/App.js
-import './App.css';
-import QuoteBox from './QuoteBox';
+// src/QuoteBox.js
+import React from 'react';
 
-function App() {
+function QuoteBox() {
+  // Component code here
   return (
-    <div className="App">
-      <QuoteBox />
+    <div>
+      {/* Render content here */}
     </div>
   );
 }
 
-export default App;
+export default QuoteBox;
