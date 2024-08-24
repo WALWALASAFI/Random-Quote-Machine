@@ -6,7 +6,7 @@
 Dimo
 
 
-you can check the live dimo of project [here]{https://walwalasafi.github.io/Random-Quote-Machine/}
+you can check the live dimo of project [here](https://walwalasafi.github.io/Random-Quote-Machine/)
 
 
 ### Rquirements
