@@ -10,10 +10,16 @@ you can check the live dimo of project [here]{}
 
 ## Technologies 
 1️⃣  React: Frontend library for building the user interface.
+
 2️⃣  Axios: For making HTTP requests to fetch quotes and images.
+
 3️⃣  Tailwind CSS: For styling the components.
+
 4️⃣  API Ninjas Quotes API: For retrieving quotes.
+
 5️⃣  Pexels API: For fetching background images based on the selected category.
+
+
 
 ### Rquirements
 

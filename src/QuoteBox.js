@@ -4,6 +4,22 @@ import axios from 'axios';
 function QuoteBox() {
   const [quote, setQuote] = useState({ text: '', author: '' });
 
+  const colors = [
+    '#dce775',
+    '#fce4ec', 
+    '#c5e1a5', 
+    '#ff6f61', 
+    '#000000', 
+    '#3f51b5', 
+    '#4caf50', 
+    '#e91e63', 
+    '#00bcd4', 
+    '#8d6e63', 
+    '#f7f1e1', 
+    '#e0f7fa', 
+    '#f0f4c3', 
+  ];
+
   useEffect(() => {
     fetchQuote();
   }, []);
@@ -15,6 +31,10 @@ function QuoteBox() {
         text: response.data.content,
         author: response.data.author
       });
+
+      // Pick a random background color for the body
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
     } catch (error) {
       console.error('Error fetching quote:', error);
     }
@@ -26,11 +46,11 @@ function QuoteBox() {
   };
 
   return (
-    <div id="quote-box">
-      <p id="text">{quote.text}</p>
-      <p id="author">- {quote.author}</p>
-      <button id="new-quote" onClick={fetchQuote}>New Quote</button>
-      <a id="tweet-quote" href="#" onClick={tweetQuote}>Tweet</a>
+    <div id="quote-box" class="bg-white rounded-lg shadow-lg p-12 w-full max-w-lg text-center">
+      <p id="text" className="text-xl font-light mb-2 text-gray-800">{quote.text}</p>
+      <p id="author" className="font-bold mb-4">- {quote.author}</p>
+      <button id="new-quote" className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gradient-to-r from-red-300 via-yellow-300 to-green-500" onClick={fetchQuote}>New Quote</button>
+      <a id="tweet-quote" className="block mt-4 text-blue-600 hover:underline" href="#" onClick={tweetQuote}>Tweet</a>
     </div>
   );
 }
