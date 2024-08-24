@@ -37,7 +37,8 @@ function QuoteBox() {
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
       document.body.style.backgroundColor = randomColor;
     } catch (error) {
-      console.error('Error fetching quote:', error); // Handle or remove this as needed
+      // Handle the error appropriately or remove this line for production
+      console.error('Error fetching quote:', error); // Consider using a logging service or user-friendly error handling
     }
   }
 
