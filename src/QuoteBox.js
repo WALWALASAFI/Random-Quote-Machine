@@ -47,7 +47,7 @@ function QuoteBox() {
 
   return (
     <div id="quote-box" class="bg-white rounded-lg shadow-lg p-12 w-full max-w-lg text-center">
-      <p id="text" className="text-xl font-light mb-2 text-gray-800">{quote.text}</p>
+      <p id="text" className="text-xl mb-2 text-gray-800 font-roman">{quote.text}</p>
       <p id="author" className="font-bold mb-4">- {quote.author}</p>
       <button id="new-quote" className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gradient-to-r from-red-300 via-yellow-300 to-green-500" onClick={fetchQuote}>New Quote</button>
       <a id="tweet-quote" className="block mt-4 text-blue-600 hover:underline" href="#" onClick={tweetQuote}>Tweet</a>
