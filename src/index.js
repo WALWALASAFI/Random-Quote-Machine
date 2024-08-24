@@ -1,11 +1,11 @@
-import React from 'react'; // Needed for React 16 and earlier
-import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css'; // Ensure you have some global CSS, if ne
+import './index.css'; // Ensure you have some global CSS, if needed
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

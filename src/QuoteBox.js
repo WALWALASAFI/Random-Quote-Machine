@@ -20,12 +20,7 @@ const colors = [
 function QuoteBox() {
   const [quote, setQuote] = useState({ text: '', author: '' });
 
-  // Fetch a quote on component mount
-  useEffect(() => {
-    fetchQuote();
-  }, []);
-
-  async function fetchQuote() { // Moved function declaration here
+  async function fetchQuote() {
     try {
       const response = await axios.get('https://api.quotable.io/random');
       setQuote({
@@ -37,13 +32,17 @@ function QuoteBox() {
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
       document.body.style.backgroundColor = randomColor;
     } catch (error) {
-      // Handle the error appropriately or remove this line for production
-      console.error('Error fetching quote:', error); // Consider using a logging service or user-friendly error handling
+      console.error('Error fetching the quote:', error);
     }
   }
 
+  // Fetch a quote on component mount
+  useEffect(() => {
+    fetchQuote();
+  }, []);
+
   const tweetQuote = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text="${encodeURIComponent(quote.text)}" - ${encodeURIComponent(quote.author)}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(quote.text)} - ${encodeURIComponent(quote.author)}`;
     window.open(twitterUrl, '_blank');
   };
 
@@ -51,8 +50,12 @@ function QuoteBox() {
     <div id="quote-box" className="bg-white rounded-lg shadow-lg p-12 w-full max-w-lg text-center">
       <p id="text" className="text-xl mb-2 text-gray-800 font-roman">{quote.text}</p>
       <p id="author" className="font-bold mb-4">- {quote.author}</p>
-      <button id="new-quote" className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gradient-to-r from-red-300 via-yellow-300 to-green-500" onClick={fetchQuote}>New Quote</button>
-      <a id="tweet-quote" className="block mt-4 text-blue-600 hover:underline" href="#" onClick={tweetQuote}>Tweet</a>
+      <button id="new-quote" className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gradient-to-r from-red-300 via-yellow-300 to-green-500" onClick={fetchQuote}>
+        New Quote
+      </button>
+      <a id="tweet-quote" className="block mt-4 text-blue-600 hover:underline" href="javascript:void(0)" onClick={tweetQuote}>
+        Tweet
+      </a>
     </div>
   );
 }
