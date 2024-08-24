@@ -1,7 +1,7 @@
-###### Random-Quote-Machine
+## Random-Quote-Machine
 
 
-## Unlock a world of inspiration and wisdom with the Random Quote Machine! This delightful tool delivers a fresh, thought-provoking quote at the touch of a button, offering a daily dose of motivation, humor, or insight. Whether you’re seeking a spark of creativity, a moment of reflection, or just a chuckle, the Random Quote Machine has you covered. It’s perfect for adding a bit of wisdom to your day, sharing with friends, or finding that perfect quote for your next project. Embrace the power of words and let each quote be a little gift to brighten your day!
+#### Unlock a world of inspiration and wisdom with the Random Quote Machine! This delightful tool delivers a fresh, thought-provoking quote at the touch of a button, offering a daily dose of motivation, humor, or insight. Whether you’re seeking a spark of creativity, a moment of reflection, or just a chuckle, the Random Quote Machine has you covered. It’s perfect for adding a bit of wisdom to your day, sharing with friends, or finding that perfect quote for your next project. Embrace the power of words and let each quote be a little gift to brighten your day!
 
 Dimo
 
