@@ -1,4 +1,3 @@
-
 import QuoteBox from './QuoteBox'; // Ensure the path is correct
 
 function App() {
