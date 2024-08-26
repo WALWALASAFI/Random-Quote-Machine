@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const colors = [
@@ -10,6 +10,7 @@ const colors = [
 function QuoteBox() {
   const [quote, setQuote] = useState({ text: 'Loading...', author: 'Loading...' });
 
+  // Fetches a new quote from the API and updates the state
   const fetchQuote = async () => {
     try {
       const response = await axios.get('https://api.quotable.io/random');
@@ -22,18 +23,15 @@ function QuoteBox() {
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
       document.body.style.backgroundColor = randomColor;
     } catch (error) {
+      // Handle error fetching the quote
       console.error('Error fetching the quote:', error);
     }
   };
 
+  // Fetch a quote on component mount
   useEffect(() => {
     fetchQuote();
   }, []);
-
-  const tweetQuote = () => {
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(quote.text)} - ${encodeURIComponent(quote.author)}`;
-    window.open(twitterUrl, '_blank');
-  };
 
   return (
     <div id="quote-box" className="bg-white rounded-lg shadow-lg p-12 w-full max-w-lg text-center mx-auto mt-20">

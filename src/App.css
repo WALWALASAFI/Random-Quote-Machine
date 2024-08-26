@@ -1,4 +1,5 @@
 /* Add an empty line before the .App rule */
+
 .App {
   text-align: center;
 }
@@ -30,6 +31,7 @@
 }
 
 /* Add an empty line before the @keyframes rule */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
