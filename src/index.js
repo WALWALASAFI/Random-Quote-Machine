@@ -7,5 +7,5 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root') // Add trailing comma if needed by eslint
+  document.getElementById('root'), // Added trailing comma
 );

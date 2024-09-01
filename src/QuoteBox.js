@@ -24,7 +24,9 @@ function QuoteBox() {
       document.body.style.backgroundColor = randomColor;
     } catch (error) {
       // Handle error fetching the quote
-      console.error('Error fetching the quote:', error);
+      if (typeof console !== 'undefined' && console.error) {
+        console.error('Error fetching the quote:', error);
+      }
     }
   };
 
