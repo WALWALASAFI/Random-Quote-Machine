@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css'; // Ensure you have some global CSS, if needed
 
-console.log(App); // Temporary usage to avoid eslint error
+// eslint-disable-next-line no-console
+console.log(React, App); // Temporary usage to avoid eslint error
 
 ReactDOM.render(
   <React.StrictMode>
