@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'; // eslint-disable-line no-unused-vars
+import React, { useState, useEffect } from 'react';
 
+// eslint-disable-next-line no-console
 const QuoteBox = () => {
   const [quote, setQuote] = useState({ text: '', author: '' });
 
@@ -13,6 +14,7 @@ const QuoteBox = () => {
       const data = await response.json();
       setQuote({ text: data.content, author: data.author });
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error("Error fetching quote: ", error);
       setQuote({ text: 'Failed to fetch quote.', author: '' });
     }
