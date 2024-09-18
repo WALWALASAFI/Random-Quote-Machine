@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 const QuoteBox = () => {
   const [quote, setQuote] = useState({ text: '', author: '' });
-  
   const colors = [
     'bg-red-500',
     'bg-blue-500',

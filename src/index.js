@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable comma-dangle */
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Correct import
 import App from './App';
