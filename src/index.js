@@ -1,14 +1,12 @@
-import React from 'react'; // Needed for React 17+ and later
-import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom/client'; // Correct import
 import App from './App';
 import './index.css'; // Ensure you have some global CSS, if needed
 
 // eslint-disable-next-line no-console
-console.log(React, App); // Temporary usage to avoid eslint error
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root'), // Added trailing comma
+  </React.StrictMode>
 );
