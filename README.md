@@ -58,14 +58,29 @@ Refresh the Page
    - Open your terminal (Command Prompt, PowerShell, or any terminal emulator).
 
    - Run the following command to clone the repository to your local machine:
+
    ```bash
    git clone https://github.com/yourusername/random-quote-machine.gitgit
+
+1. **Navigate to the Project Directory**
+
+   - Change your current working directory to the cloned repository:
    
-   - cd random-quote-machine
+    ```bash
+    cd random-quote-machine
 
-   - start chrome index.html
+3. **Open the Project in Your Browser**
 
-   - npm install
+- Locate the index.html, react files such us app.js, index.js, src that includes the components file in the cloned directory.
+- You can either double-click on it or use your terminal to open it with a specific browser. For example, to open it with Google Chrome, you can use:
+  
+   ```bash
+   start chrome index.html
+   
+4. **Start the server with**
+
+  ```bash
+ npm start
 
 
 
