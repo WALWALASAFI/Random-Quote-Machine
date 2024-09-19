@@ -79,10 +79,9 @@ Refresh the Page
 
 4. **Start the server with**
 
-  ```bash
- npm start
+   ```bash
+   npm start
 
-5. **finally push to the github or any other page**
 
 
 
