@@ -76,12 +76,13 @@ Refresh the Page
   
    ```bash
    start chrome index.html
-   
+
 4. **Start the server with**
 
   ```bash
  npm start
 
+5. **finally push to the github or any other page**
 
 
 
