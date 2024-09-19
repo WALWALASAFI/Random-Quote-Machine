@@ -82,9 +82,6 @@ Refresh the Page
    ```bash
    npm start
 
-
-
-
 ## Author ✅
 ◻ Github:[ WALWALASAFI ](https://github.com/WALWALASAFI/product-landing-page.git)
 
